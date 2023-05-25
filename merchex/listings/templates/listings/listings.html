@@ -3,10 +3,13 @@
 {% block content %}
 
     <h1>Here are the listings</h1>
-    <ul>
+    <div id="test-header">
+        <p></p>
+    </div>
+    <div id="listings-grid">
         {% for listing in listings %}
-            <li>{{ listing.title }}</li>
+            <div class="listing-item">{{ listing.title }}</div>
         {% endfor %}
-    </ul>
+    </div>
 
 {% endblock %}

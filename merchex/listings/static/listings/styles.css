@@ -1,11 +1,30 @@
-* { background: blueviolet }
+* {
+    background: blueviolet;
+    font-family: OtomanopeeOne-Regular, sans-serif;
+    }
 
 h1 {
 	text-align: center;
-	color: ghostwhite;
-	font-family: OtomanopeeOne-Regular, sans-serif;
+	color: white;
 	font-size: 3em;
 	letter-spacing: 0.02em;
 	word-spacing: 0.2em;
 	line-height: 1em;
 	}
+
+#listings-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+	grid-template-rows: repeat(auto-fit, minmax(100px, 200px));
+	grid-auto-rows: 100px;
+	margin: 10px;
+	padding: 20px;
+	column-gap: 10px;
+	row-gap: 10px;
+    }
+
+.listing-item {
+    color: white;
+    background-color: black;
+    padding: 10px;
+}

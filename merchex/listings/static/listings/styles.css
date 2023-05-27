@@ -1,18 +1,17 @@
 * {
-    background: blueviolet;
+    background: aliceblue;
     font-family: OtomanopeeOne-Regular, sans-serif;
     }
 
 h1 {
 	text-align: center;
-	color: white;
 	font-size: 3em;
 	letter-spacing: 0.02em;
 	word-spacing: 0.2em;
 	line-height: 1em;
 	}
 
-#listings-grid {
+.listings-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
 	grid-template-rows: repeat(auto-fit, minmax(100px, 200px));
@@ -24,7 +23,7 @@ h1 {
     }
 
 .listing-item {
-    color: white;
-    background-color: black;
+    overflow:hidden;
+    background-color: blueviolet;
     padding: 10px;
 }

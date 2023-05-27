@@ -6,9 +6,12 @@
     <div id="test-header">
         <p></p>
     </div>
-    <div id="listings-grid">
+    <div class="listings-grid">
         {% for listing in listings %}
-            <div class="listing-item">{{ listing.title }}</div>
+            <div class="listing-item">
+                <div class="listing-title">{{ listing.title }}</div>
+                <div class="listing-type">{{ listing.type }}</div>
+            </div>
         {% endfor %}
     </div>
 

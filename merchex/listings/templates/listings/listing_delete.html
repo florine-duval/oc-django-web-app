@@ -1,0 +1,14 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+
+    <h1>Delete listing</h1>
+    <p>Are you sure you want to delete listing {{ listing.title }}?</p>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Yes, delete this listing">
+    </form>
+    <a href="{% url 'listing-detail' listing.id %}">No, take me back to the page of {{ listing.title }}</a>
+
+{% endblock %}

@@ -12,7 +12,8 @@
         <li>Band: <a href="{% url 'band-detail' listing.band.id %}">{{ listing.band }}</a></li>
     </ul>
 
-
-<a href="{% url 'band-list' %}">Back to all bands</a>
+<a href="{% url 'listing-update' listing.id %}">Edit this listing</a>
+<a href="{% url 'listing-delete' listing.id %}">Delete this listing</a>
+<a href="{% url 'listing-list' %}">View all listings</a>
 
 {% endblock %}

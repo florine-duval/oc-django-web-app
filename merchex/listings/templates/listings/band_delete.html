@@ -1,0 +1,14 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+
+    <h1>Delete band</h1>
+    <p>Are you sure you want to delete band {{ band.name }}?</p>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Yes, delete this band">
+    </form>
+    <a href="{% url 'band-detail' band.id %}">No, take me back to the page of {{ band.name }}</a>
+
+{% endblock %}

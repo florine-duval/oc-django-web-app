@@ -2,15 +2,19 @@
 
 {% block content %}
 
-    <h1>Here are the listings</h1>
-    <div id="test-header">
-        <p></p>
+    <h1>Listings</h1>
+    <div id="create-new-listing">
+        <p><a href="{% url 'listing-create' %}">Create a new listing</a></p>
     </div>
     <div class="listings-grid">
         {% for listing in listings %}
             <div class="listing-item">
-                <div class="listing-title">{{ listing.title }}</div>
-                <div class="listing-type">{{ listing.type }}</div>
+                <div class="listing-title">
+                    <a href="{% url 'listing-detail' listing.id %}">{{ listing.title }}</a>
+                </div>
+                <div class="listing-type">
+                    {{ listing.type }}
+                </div>
             </div>
         {% endfor %}
     </div>

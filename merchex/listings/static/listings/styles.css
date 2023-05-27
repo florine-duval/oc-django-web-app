@@ -27,3 +27,9 @@ h1 {
     background-color: blueviolet;
     padding: 10px;
 }
+
+.errorlist { margin-bottom: -10px }
+
+.edit {
+    color: red
+}

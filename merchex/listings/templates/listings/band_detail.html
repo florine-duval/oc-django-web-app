@@ -24,6 +24,8 @@
         {% endfor %}
     </div>
 
-    <a href="{% url 'band-list' %}">Back to all bands</a>
+    <a href="{% url 'band-update' band.id %}">Edit this Band</a>
+    <a href="{% url 'band-delete' band.id %}">Delete this band</a>
+    <a href="{% url 'band-list' %}">View all bands</a>
 
 {% endblock %}
